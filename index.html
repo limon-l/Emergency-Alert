@@ -5,13 +5,318 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/9e275c6f55.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
-        <h1>Emergency Hotline</h1>
-        <p>Call us at: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <div class="flex justify-between items-center px-[60px] py-[25px] ">
+            <div class="flex items-center">
+                <img class="w-[80px] mr-3" src="/assets/logo.png" alt="logo">
+                <h2 class="text-[32px] leading-[38px] text-green-800 font-bold">Emergency<br>Service</h2>
+            </div>
+            <div>
+                <ul class="flex gap-5">
+                    <li class="flex bg-green-100 gap-[10px] rounded-full px-7 py-3 items-center"><span
+                            class="loveCount text-2xl font-bold">0</span><img class="w-[40px]" src="/assets/heart.png"
+                            alt="">
+                    </li>
+                    <li class="flex bg-green-100 gap-[10px] rounded-full px-7 py-3 items-center"><span
+                            class="loveCount text-2xl font-bold">100</span><img class="w-[40px]" src="/assets/coin.png"
+                            alt="">
+                    </li>
+                    <li
+                        class="flex bg-green-500 text-white gap-[10px] rounded-full px-7 py-3 items-center loveCount text-2xl font-medium">
+                        <span>0</span>Copy
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="py-6 text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <img class="w-[120px] mx-auto" src="/assets/logo-dark.png" alt="">
+            <h2 class="text-[40px] my-3 text-white font-bold">Emergency Service Directory</h2>
+            <p class="text-[20px] text-white font-semibold">Government Emergency Services at Your Fingertip – A Project
+                by Government of the
+                People’s Republic of
+                Bangladesh</p>
+        </section>
     </header>
+    <main class="bg-green-50">
+        <div class="grid grid-cols-4 gap-[30px] px-[60px] pt-12 pb-20">
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">National Emergency Number</h2>
+                    <p class="text-[20px] text-gray-600">National Emergency</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">999</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">All</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/police.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Police Helpline Number</h2>
+                    <p class="text-[20px] text-gray-600">Police</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">999</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Police</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Fire Service Number</h2>
+                    <p class="text-[20px] text-gray-600">Fire Service</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">999</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Fire</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- History Site -->
+
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl row-span-3">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="flex gap-4 items-center">
+                        <i id="favorite" class="fa-regular fa-clock text-4xl"></i>
+                        <p class="text-3xl font-semibold">Call History</p>
+                    </div>
+                    <button
+                        class="flex bg-green-500 text-white gap-[10px] rounded-full px-8 py-4 items-center loveCount text-2xl font-medium">
+                        <span id="clear">Clear</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/ambulance.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Ambulance Service</h2>
+                    <p class="text-[20px] text-gray-600">Ambulance</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">1994-999999</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Helth</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Women & Child Helpline</h2>
+                    <p class="text-[20px] text-gray-600">Women & Child Helpline</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">109</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Help</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Anti-Corruption Helpline</h2>
+                    <p class="text-[20px] text-gray-600">Anti-Corruption</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">106</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Govt.</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Electricity Helpline</h2>
+                    <p class="text-[20px] text-gray-600">Electricity Outage</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">16216</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Electricity</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/brac.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Brac Helpline</h2>
+                    <p class="text-[20px] text-gray-600">Brac</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">16445</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">NGO</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+                <div class="flex justify-between items-center pb-4">
+                    <div class="bg-[#FFE3E2] p-5 rounded-3xl">
+                        <img class=" w-[32px]" src="/assets/Bangladesh-Railway.png" alt="emergency-logo">
+                    </div>
+                    <i id="favorite" class="fa-regular fa-heart text-3xl"></i>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold">Bangladesh Railway Helpline</h2>
+                    <p class="text-[20px] text-gray-600">Bangladesh Railway</p>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold mb-3">163</h2>
+                    <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                            class="loveCount text-lg font-thin">Travel</span>
+                    </p>
+                </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy" class="text-gray-600 text-lg">Copy</span>
+                    </button>
+                    <button class="bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="call" class="text-lg">Call</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+
+    </script>
 </body>
 
 </html>
