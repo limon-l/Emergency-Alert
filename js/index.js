@@ -55,6 +55,16 @@ for (const el of callBtn) {
         const callerID = el.parentNode.previousElementSibling.previousElementSibling.querySelector('.callerId').innerText;
         const callerTitle = el.parentNode.previousElementSibling.previousElementSibling.querySelector('.caller-title').innerText;
         const callingNumber = el.parentNode.previousElementSibling.querySelector('.copy-text').innerText;
+        const callHistory = document.getElementById('call-history');
+
+        // time 
+        const now = new Date();
+
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const time = `${hours}:${minutes}:${seconds}`;
+
         if (starCounter < 20) {
             alert(`!!! Insufficient Coin For Call !!!`);
 
@@ -62,7 +72,26 @@ for (const el of callBtn) {
         else {
             starCounter = starCounter - 20;
             starCount.innerText = starCounter;
-            alert("Calling " + callerID + " "+ callingNumber + "...");
+            alert("Calling " + callerID + " " + callingNumber + "...");
+            
+            // Call History Add
+            const newCall = document.createElement('p');
+            newCall.innerHTML = `<div class="call-history-block">
+                        <div class="caller-info">
+                            <h2 class="caller-title">
+                               ${callerID}
+                            </h2>
+                            <h2 class="calling-number">
+                                ${callingNumber}
+                            </h2>
+                        </div>
+                        <div class="call-time">
+                            <p>
+                                ${time}
+                            </p>
+                        </div>
+                    </div>`;
+            callHistory.appendChild(newCall);
         }
     })
 }
