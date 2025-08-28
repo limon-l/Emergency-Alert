@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
-    <link rel="stylesheet" href="/styles/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/9e275c6f55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/style.css">
 
 </head>
 
 <body>
     <header>
-        <div class="flex justify-between items-center px-[60px] py-[25px]">
+        <div class="flex flex-col md:flex-row justify-between items-center px-[60px] py-[25px]">
             <div class="flex items-center">
-                <img class="w-[80px] mr-3" src="/assets/logo.png" alt="logo">
-                <h2 class="text-[32px] leading-[38px] text-green-800 font-bold">Emergency<br>Service</h2>
+                <img class="w-[70px] mr-3" src="/assets/logo.png" alt="logo">
+                <h2 class="text-3xl leading-8 text-green-800 font-bold">Emergency<br>Service</h2>
             </div>
             <div>
                 <ul class="flex gap-5">
-                    <li class="flex bg-green-100 gap-[10px] rounded-full px-7 py-3 items-center"><span id="loveCount"
-                            class="text-2xl font-bold">0</span><img class="w-[40px]" src="/assets/heart.png" alt="">
+                    <li class="flex bg-green-50 gap-[10px] rounded-full px-5 py-1.5 items-center inter-font"><span
+                            id="loveCount" class="text-2xl font-bold">0</span><img class="w-[30px]"
+                            src="/assets/heart.png" alt="">
                     </li>
-                    <li class="flex bg-green-100 gap-[10px] rounded-full px-7 py-3 items-center"><span
-                            class="text-2xl font-bold" id="starCount">100</span><img class="w-[40px]"
+                    <li class="flex bg-green-50 gap-[10px] rounded-full px-5 py-1.5 items-center inter-font"><span
+                            class="text-2xl font-bold" id="starCount">100</span><img class="w-[30px]"
                             src="/assets/coin.png" alt="">
                     </li>
                     <li
-                        class="flex bg-green-500 text-white gap-[10px] rounded-full px-7 py-3 items-center text-2xl font-medium">
+                        class="flex bg-green-500 text-white gap-[10px] rounded-3xl px-5 py-1.5 items-center text-xl font-medium inter-font">
                         <span id="copy-counter">0</span>Copy
                     </li>
                 </ul>
@@ -36,8 +37,11 @@
         </div>
         <section class="py-6 text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
             <img class="w-[120px] mx-auto" src="/assets/logo-dark.png" alt="">
-            <h2 class="text-[40px] my-3 text-white font-bold">Emergency Service Directory</h2>
-            <p class="callerId text-[20px] text-white font-semibold">Government Emergency Services at Your Fingertip – A
+            <h2 class="my-6 text-white font-bold hind-madurai" style="font-size: 40px !important;">Emergency Service
+                Directory</h2>
+            <p class="callerId text-white font-semibold hind-madurai" style="font-size: 20px !important;">Government
+                Emergency Services at Your
+                Fingertip – A
                 Project
                 by Government of the
                 People’s Republic of
@@ -45,272 +49,323 @@
         </section>
     </header>
     <main class="bg-green-50">
-        <div class="grid grid-cols-4 gap-[30px] px-[60px] pt-12 pb-20">
-            <div class="grid grid-cols-3 gap-[30px] col-span-3">
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+        <!-- Cards Section  -->
+        <div class="grid grid-cols-1 md:grid-cols-4 md:gap-[30px] px-3 md:px-[60px] pt-12 pb-20">
+
+            <!-- Cards  -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 col-span-3">
+
+                <!-- Card 1 -->
+
+
+                <!-- Edited Card  -->
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">National Emergency Number</h2>
-                        <p class="callerId text-[20px] text-gray-600">National Emergency</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">999</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
                                 class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/police.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Police Helpline Number</h2>
-                        <p class="callerId text-[20px] text-gray-600">Police</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">999</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Police</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Fire Service Number</h2>
-                        <p class="callerId text-[20px] text-gray-600">Fire Service</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">999</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Fire</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center  copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/ambulance.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Ambulance Service</h2>
-                        <p class="callerId text-[20px] text-gray-600">Ambulance</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">1994-999999</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Helth</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Women & Child Helpline</h2>
-                        <p class="callerId text-[20px] text-gray-600">Women & Child Helpline</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">109</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Help</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Anti-Corruption Helpline</h2>
-                        <p class="callerId text-[20px] text-gray-600">Anti-Corruption</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">106</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Govt.</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/emergency.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Electricity Helpline</h2>
-                        <p class="callerId text-[20px] text-gray-600">Electricity Outage</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">16216</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Electricity</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/brac.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Brac Helpline</h2>
-                        <p class="callerId text-[20px] text-gray-600">Brac</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">16445</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">NGO</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
-                <div class="copy-box py-10 px-[40px] bg-white shadow-sm rounded-2xl">
+
+
+                <div class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl">
                     <div class="flex justify-between items-center pb-4">
-                        <div class="bg-[#FFE3E2] p-5 rounded-3xl">
-                            <img class=" w-[32px]" src="/assets/Bangladesh-Railway.png" alt="emergency-logo">
+                        <div class="bg-[#FFE3E2] p-3 rounded-2xl">
+                            <img class=" w-9" src="/assets/emergency.png" alt="emergency-logo">
                         </div>
                         <i class="favorite fa-regular fa-heart text-3xl"></i>
                     </div>
-                    <div class="mb-6">
-                        <h2 class="caller-title text-3xl font-bold">Bangladesh Railway Helpline</h2>
-                        <p class="callerId text-[20px] text-gray-600">Bangladesh Railway</p>
+                    <div class="mb-4">
+                        <h2 class="caller-title hind-madurai font-bold">National Emergency Number</h2>
+                        <p class="callerId text-sm text-gray-600 roboto-font">National Emergency</p>
                     </div>
-                    <div class="mb-9">
-                        <h2 class="text-4xl font-bold mb-3 copy-text">163</h2>
-                        <p class="bg-gray-100 rounded-3xl px-5 py-3 items-center inline"><span
-                                class="loveCount text-lg font-thin">Travel</span>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-3 copy-text">999</h2>
+                        <p class="bg-gray-100 rounded-2xl px-5 py-2 items-center inline"><span
+                                class="loveCount text-lg font-thin">All</span>
                         </p>
                     </div>
-                    <div class="flex gap-2 justify-center">
-                        <button class="border border-gray-300 rounded-lg px-20 py-3 flex gap-2 items-center copy">
-                            <i class="fa-regular fa-copy"></i>
-                            <span class="text-gray-600 text-lg">Copy</span>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <button
+                            class="group border border-gray-300 rounded-lg px-10 py-2 flex gap-2 items-center copy hover:bg-green-500 cursor-pointer">
+                            <i class="fa-regular fa-copy group-hover:text-white"></i>
+                            <span class="text-gray-600 text-lg group-hover:text-white">Copy</span>
                         </button>
-                        <button class="call-btn bg-green-500 rounded-lg px-20 py-3 flex gap-2 items-center text-white">
+                        <button
+                            class="call-btn bg-green-500 rounded-lg px-10 py-2 flex gap-2 items-center text-white hover:bg-green-800 cursor-pointer">
                             <i class="fa-solid fa-phone"></i>
                             <span class="text-lg">Call</span>
                         </button>
                     </div>
                 </div>
+
+
+
+
+
             </div>
-            <div class="history-section">
+
+
+
+            <div class="history-section md:mt-0 mt-4">
                 <!-- History Site -->
 
-                <div id="call-history" class="py-10 px-[40px] bg-white shadow-sm rounded-2xl h-full">
-                    <div class="flex justify-between items-center pb-4">
-                        <div class="flex gap-4 items-center">
-                            <i class="favorite fa-regular fa-clock text-4xl"></i>
-                            <p class="text-3xl font-semibold">Call History</p>
+                <div id="call-history" class="copy-box py-5 md:py-7 px-3 md:px-6 bg-white shadow-sm rounded-2xl h-full">
+                    <div class="flex justify-between items-center pb-1">
+                        <div class="flex gap-2 items-center">
+                            <i class="favorite fa-regular fa-clock text-2xl"></i>
+                            <p class="text-xl font-semibold">Call History</p>
                         </div>
                         <button
-                            class="flex bg-green-500 text-white gap-[10px] rounded-full px-8 py-4 items-center loveCount text-2xl font-medium">
+                            class="flex bg-green-500 text-white gap-[10px] rounded-xl px-6 py-2 items-center text-lg font-medium hover:bg-green-800 cursor-pointer">
                             <span id="clear">Clear</span>
                         </button>
                     </div>

@@ -1,29 +1,66 @@
+/* Fonts  */
+
+/* hind-madurai  */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+.hind-madurai {
+    font-family: "Hind Madurai", sans-serif !important;
+    font-size: 1.5rem !important;
+    line-height: 1.8rem;
+}
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-font {
+    font-family: "Roboto", sans-serif !important;
+
+}
+
+/* Inter Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+/* Call History New History  */
+
 .call-history-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
-    padding: 1.25rem;
+    margin-top: 1rem;
+    padding: 1rem;
     border-radius: 1rem;
     background-color: #f3f4f6;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .caller-title {
-    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0.25rem 0;
 }
 
 .calling-number {
-    font-size: 1.5rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0.25rem 0;
     color: gray;
+
 }
 
 .call-time p {
-    font-size: 1.5rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0;
 }
