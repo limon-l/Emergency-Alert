@@ -55,7 +55,7 @@ for (const el of callBtn) {
         const callerID = el.parentNode.previousElementSibling.previousElementSibling.querySelector('.callerId').innerText;
         const callerTitle = el.parentNode.previousElementSibling.previousElementSibling.querySelector('.caller-title').innerText;
         const callingNumber = el.parentNode.previousElementSibling.querySelector('.copy-text').innerText;
-        const callHistory = document.getElementById('call-history');
+        const callHistory = document.getElementById('call-history-section');
 
         // time 
         const now = new Date();
@@ -95,3 +95,9 @@ for (const el of callBtn) {
         }
     })
 }
+
+
+// Clear Call History
+document.getElementById('clear').addEventListener('click', function () {
+    document.getElementById('call-history-section').innerHTML = '';
+});
