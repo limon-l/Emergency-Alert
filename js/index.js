@@ -37,7 +37,7 @@ const copyButtons = document.querySelectorAll(".copy");
             const copyNumber = card.querySelector(".copy-text").innerText;
 
             navigator.clipboard.writeText(copyNumber).then(() => {
-                alert("Text Copied! Phone No: " + copyNumber);
+                alert("📃 Text Copied! Phone No: " + copyNumber);
             })
         });
     });
@@ -66,13 +66,13 @@ for (const el of callBtn) {
         const time = `${hours}:${minutes}:${seconds}`;
 
         if (starCounter < 20) {
-            alert(`!!! Insufficient Coin For Call !!!`);
+            alert("❌ Insufficient Coin For Call ❌");
 
         }
         else {
             starCounter = starCounter - 20;
             starCount.innerText = starCounter;
-            alert("Calling " + callerID + " " + callingNumber + "...");
+            alert("📞 Calling " + callerID + " " + callingNumber + "...");
             
             // Call History Add
             const newCall = document.createElement('p');
